@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4VF7WNZRR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-H4VF7WNZRR'); </script><meta charset="utf-8"><title>StrikeHub – Football Results, Top Scorers & Player Compare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#06141a;--card:#0d252f;--line:#17414f;--tx:#eafcff;--mu:#82b3c0;--ac:#00d4ff;--ac2:#ffcf33;--g:#2dff9a;--bad:#ff5a6e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef9fc;--card:#fff;--line:#c6e3ec;--tx:#082530;--mu:#496d7a;--ac:#0087a8;--ac2:#b88600;--g:#08915a;--bad:#d42a40}}
+:root[data-theme="dark"]{--bg:#06141a;--card:#0d252f;--line:#17414f;--tx:#eafcff;--mu:#82b3c0;--ac:#00d4ff;--ac2:#ffcf33;--g:#2dff9a;--bad:#ff5a6e}
+:root[data-theme="light"]{--bg:#eef9fc;--card:#fff;--line:#c6e3ec;--tx:#082530;--mu:#496d7a;--ac:#0087a8;--ac2:#b88600;--g:#08915a;--bad:#d42a40}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+.w{max-width:1080px;margin:auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font-weight:900;font-size:23px}.logo b{color:var(--ac)}
+nav a{color:var(--mu);text-decoration:none;margin-left:14px;font-size:14px}
+#th{background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:99px;padding:6px 12px;cursor:pointer;margin-left:14px}
+.btn{display:inline-block;background:var(--ac);color:#02161c;border:0;padding:12px 22px;border-radius:12px;font-weight:800;cursor:pointer;text-decoration:none;font-size:15px}
+.btn.o{background:none;color:var(--ac);border:1.5px solid var(--ac)}.btn.g{background:var(--ac2);color:#1a1200}
+.hero{padding:56px 0 24px;display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
+.hero h1{font-size:clamp(34px,6vw,58px);margin:0 0 12px;line-height:1.05;letter-spacing:-1.5px}.hero h1 span{color:var(--ac)}
+.hero p{color:var(--mu);font-size:18px;margin:0 0 22px}
+.live{background:linear-gradient(135deg,var(--card),rgba(0,212,255,.12));border:1px solid var(--line);border-radius:20px;padding:22px;text-align:center}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--bad);margin-right:6px;animation:b 1.2s infinite}@keyframes b{50%{opacity:.2}}
+.big{display:flex;justify-content:space-around;align-items:center;margin:14px 0;font-weight:800}.big .sc{font-size:46px;color:var(--ac2)}
+.pbar{height:10px;border-radius:99px;overflow:hidden;display:flex;background:var(--line)}.pbar i{display:block;height:100%}
+h2{font-size:28px;margin:50px 0 6px;letter-spacing:-.5px}.sub{color:var(--mu);margin:0 0 18px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.bar button,.bar select{background:var(--card);color:var(--mu);border:1px solid var(--line);padding:9px 16px;border-radius:99px;font-weight:600;font-size:14px}
+.bar button{cursor:pointer}.bar button.on{background:var(--ac);color:#02161c;border-color:var(--ac)}.bar select{color:var(--tx);border-radius:12px;flex:1;min-width:150px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.m,.p{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.lg{color:var(--mu);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.row{display:flex;justify-content:space-between;align-items:center;margin:8px 0;font-weight:700}.row .sc{font-size:22px}
+.tag{display:inline-block;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;background:rgba(45,255,154,.14);color:var(--g)}
+.tag.l{background:rgba(255,90,110,.14);color:var(--bad)}.tag.d{background:rgba(255,207,51,.14);color:var(--ac2)}
+.lock{position:relative;margin-top:12px;border-top:1px dashed var(--line);padding-top:12px;font-size:14px}
+.lock .blur{filter:blur(6px);user-select:none;color:var(--mu)}.lock .ov{position:absolute;inset:12px 0 0;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--ac2)}
+.open .blur{filter:none;color:var(--tx)}.open .ov{display:none}
+.sc-list{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 16px}
+.sr{display:grid;grid-template-columns:28px 1fr 2fr 44px;gap:10px;align-items:center;padding:10px 0;font-size:14px}.sr+.sr{border-top:1px solid var(--line)}
+.sr .tr{height:8px;background:var(--line);border-radius:99px;overflow:hidden}.sr .tr i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--ac2));border-radius:99px}
+.sr.lk .tr,.sr.lk b{filter:blur(5px)}
+.pl{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.av{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,var(--ac),var(--ac2));display:grid;place-items:center;font-weight:900;color:#02161c;font-size:18px}
+.p h3{margin:10px 0 0;font-size:17px}.p .t{color:var(--mu);font-size:13px}.star{float:right;color:var(--ac2);font-size:12px;font-weight:800}
+.p .d{margin-top:10px;font-size:13px;border-top:1px dashed var(--line);padding-top:10px}.p .d div{display:flex;justify-content:space-between;padding:2px 0}.p .d.lk div{filter:blur(5px);user-select:none}
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.cmp .cr{display:grid;grid-template-columns:1fr 90px 1fr;text-align:center;padding:8px 0;border-top:1px solid var(--line);font-weight:700}.cmp .cr span{color:var(--mu);font-weight:500;font-size:13px}
+.cmp .cr .w1{color:var(--g)}.cmp.lk .cr{filter:blur(6px)}
+.unl{background:linear-gradient(135deg,var(--card),rgba(255,207,51,.1));border:1px solid var(--ac2);border-radius:20px;padding:26px;text-align:center}
+.unl input{padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font-size:16px;width:min(260px,100%);margin:6px 6px 6px 0}
+#msg{margin-top:8px;font-weight:700;min-height:22px}
+.news{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.news div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}.news b{display:block;margin:6px 0}.news small{color:var(--mu)}
+.plans{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));margin-top:18px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}.pc.pr{border:2px solid var(--ac2);position:relative}
+.pc.pr:before{content:"BEST DEAL";position:absolute;top:-12px;left:22px;background:var(--ac2);color:#1a1200;font-size:11px;font-weight:900;padding:3px 10px;border-radius:99px}
+.pc h3{margin:0}.pri{font-size:44px;font-weight:900;margin:8px 0}.pri small{font-size:14px;color:var(--mu);font-weight:500}
+.pc ul{list-style:none;padding:0;margin:14px 0 20px;color:var(--mu)}.pc li{padding:4px 0}.pc li:before{content:"✓ ";color:var(--g);font-weight:900}.pc .btn{width:100%;text-align:center}
+.steps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;color:var(--mu);font-size:14px}.steps b{color:var(--ac2);font-size:22px;display:block}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:700}details p{color:var(--mu);margin:8px 0 0}
+footer{margin-top:60px;border-top:1px solid var(--line);padding:26px 0;color:var(--mu);text-align:center;font-size:13px}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:99px;padding:13px 20px;font-weight:800;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:9}
+</style></head><body>
+<header><div class="w"><nav><div class="logo">Strike<b>Hub</b></div><div><a href="#results">Results</a><a href="#scorers">Scorers</a><a href="#compare">Compare</a><a href="#plans">Plans</a><button id="th" aria-label="Theme">🌓</button></div></nav></div></header>
+<main class="w">
+<section class="hero"><div><h1>See who wins. <span>Unlock the rest.</span></h1><p>Free winners and losers every day. Go Premium for $3 to open top scorers, player compare, Ronaldo, Messi, Neymar and full match analysis.</p><a class="btn g" href="#plans">Get Premium – $3</a> <a class="btn o" href="#results">Today's results</a></div>
+<div class="live"><div class="lg"><span class="dot"></span>Featured match · Premier League</div><div class="big"><span>Arsenal</span><span class="sc" id="ls">2 - 1</span><span>Chelsea</span></div><div class="pbar"><i style="width:58%;background:var(--ac)"></i><i style="width:22%;background:var(--ac2)"></i><i style="width:20%;background:var(--bad)"></i></div><small style="color:var(--mu)">Win chance: Arsenal 58% · Draw 22% · Chelsea 20%</small></div></section>
+
+<h2 id="results">Match Results</h2><p class="sub">Winner and loser are free. Win probability and analysis are Premium.</p>
+<div class="bar" id="tabs"></div><div class="grid" id="matches"></div>
+
+<h2 id="scorers">Top Scorers</h2><p class="sub">Names are free. Goals and form are Premium.</p>
+<div class="sc-list" id="sl"></div>
+
+<h2 id="players">Player Spotlight</h2><p class="sub">Full details for every star, including legends.</p>
+<div class="pl" id="pg"></div>
+
+<h2 id="compare">Player Compare</h2><p class="sub">Pick two players and compare them side by side (Premium).</p>
+<div class="bar"><select id="c1"></select><select id="c2"></select></div><div class="cmp" id="cm"></div>
+
+<h2>Football News</h2>
+<div class="news"><div><small>TRANSFERS</small><b>Big clubs chase a new striker for January</b><small>Free story</small></div><div><small>ANALYSIS</small><b>Why high pressing is winning more games this season</b><small>Free story</small></div><div><small>LEGENDS</small><b>Messi and Ronaldo: the numbers that define a era</b><small>Free story</small></div></div>
+
+<h2 id="unlock">Unlock Premium</h2>
+<div class="unl"><h3 style="margin:0 0 6px">Already paid? Enter your password</h3><p style="color:var(--mu);margin:0 0 10px">You get the password on WhatsApp after payment.</p>
+<input id="pw" type="password" placeholder="Enter password" autocomplete="off"><button class="btn g" id="go">Unlock</button><div id="msg"></div></div>
+
+<h2 id="plans">Plans</h2><p class="sub">Pay via WhatsApp, get your password, unlock instantly.</p>
+<div class="plans">
+<div class="pc"><h3>Free</h3><div class="pri">$0</div><ul><li>Match winner & loser</li><li>Player and scorer names</li><li>Football news</li></ul><a class="btn o" href="#results">Current plan</a></div>
+<div class="pc pr"><h3>Premium</h3><div class="pri">$3 <small>access</small></div><ul><li>Full details of every player</li><li>Ronaldo, Messi & Neymar</li><li>Top scorer goals and form</li><li>Player compare tool</li><li>Win chance and match analysis</li></ul><a class="btn g" id="buy" target="_blank" rel="noopener">Pay $3 on WhatsApp</a></div></div>
+<div class="steps"><div><b>1</b>Tap “Pay $3 on WhatsApp”</div><div><b>2</b>Send your payment</div><div><b>3</b>Get your password</div><div><b>4</b>Enter it above and enjoy</div></div>
+
+<h2>FAQ</h2>
+<details><summary>What do I get for free?</summary><p>Every match winner and loser, player names and football news.</p></details>
+<details><summary>How do I get the password?</summary><p>Tap Pay on WhatsApp, send $3, and I'll send you the password.</p></details>
+<details><summary>Does it work on my phone?</summary><p>Yes, StrikeHub works on any phone, tablet or computer.</p></details>
+</main>
+<footer>© 2026 StrikeHub · Support: WhatsApp 175047568</footer>
+<a class="wa" id="wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+<script>
+var PASS="12378909",NUM="60175047568",premium=false,cur="All";
+try{premium=localStorage.getItem("sh_prem")==="1"}catch(e){}
+var link="https://wa.me/"+NUM+"?text="+encodeURIComponent("Hello StrikeHub, I want the $3 Premium subscription. Please send me the password.");
+document.getElementById("buy").href=link;document.getElementById("wa").href=link;
+var M=[["Premier League","Arsenal","Chelsea",2,1,"Win chance 58%. Saka scored twice; Arsenal had 61% possession."],["Premier League","Man City","Liverpool",1,1,"Draw chance 30%. Haaland scored early, Salah levelled late."],["La Liga","Real Madrid","Sevilla",3,0,"Win chance 74%. Vinícius assisted twice."],["La Liga","Barcelona","Valencia",1,2,"Upset: Valencia had only 35% possession but won on the counter."],["Serie A","Inter","Juventus",2,0,"Win chance 55%. Lautaro scored and set up the second."],["Bundesliga","Bayern","Dortmund",4,2,"Win chance 68%. Kane led a high press."]];
+var P=[["Cristiano Ronaldo","Portugal · ST","CR","Goals","900+","Ballon d'Or","5","Skill","Power & heading",1,900,9.3,5],["Lionel Messi","Argentina · RW","LM","Goals","800+","Ballon d'Or","8","Skill","Dribbling & vision",1,800,9.5,8],["Neymar Jr","Brazil · LW","NJ","Goals","430+","Ballon d'Or","0","Skill","Flair & skill moves",1,430,8.8,0],["Erling Haaland","Man City · ST","EH","Goals","28","Rating","9.4","Value","€180M",0,28,9.4,0],["Mohamed Salah","Liverpool · RW","MS","Goals","21","Rating","9.1","Value","€90M",0,21,9.1,0],["Bukayo Saka","Arsenal · RW","BS","Goals","19","Rating","8.9","Value","€130M",0,19,8.9,0],["Harry Kane","Bayern · ST","HK","Goals","26","Rating","9.2","Value","€110M",0,26,9.2,0]];
+var S=[["Erling Haaland","Man City",28],["Harry Kane","Bayern",26],["Kylian Mbappé","Real Madrid",24],["Mohamed Salah","Liverpool",21],["Bukayo Saka","Arsenal",19]];
+function render(){
+var l=["All"].concat(M.map(function(m){return m[0]}).filter(function(v,i,a){return a.indexOf(v)==i}));
+document.getElementById("tabs").innerHTML=l.map(function(x){return '<button class="'+(x==cur?"on":"")+'" data-l="'+x+'">'+x+'</button>'}).join("");
+document.querySelectorAll("#tabs button").forEach(function(b){b.onclick=function(){cur=b.dataset.l;render()}});
+document.getElementById("matches").innerHTML=M.filter(function(m){return cur=="All"||m[0]==cur}).map(function(m){
+var r=m[3]==m[4]?'<span class="tag d">Draw</span>':'<span class="tag">Winner: '+(m[3]>m[4]?m[1]:m[2])+'</span> <span class="tag l">Loser: '+(m[3]>m[4]?m[2]:m[1])+'</span>';
+return '<div class="m"><div class="lg">'+m[0]+'</div><div class="row"><span>'+m[1]+'</span><span class="sc">'+m[3]+' - '+m[4]+'</span><span>'+m[2]+'</span></div><div>'+r+'</div><div class="lock '+(premium?"open":"")+'"><div class="blur">'+m[5]+'</div><div class="ov">🔒 Premium analysis</div></div></div>'}).join("");
+document.getElementById("sl").innerHTML=S.map(function(s,i){return '<div class="sr '+(premium?"":"lk")+'"><span>'+(i+1)+'</span><span><b style="filter:none">'+s[0]+'</b> <small style="color:var(--mu)">'+s[1]+'</small></span><div class="tr"><i style="width:'+(s[2]/28*100)+'%"></i></div><b>'+s[2]+'</b></div>'}).join("");
+document.getElementById("pg").innerHTML=P.map(function(p){
+return '<div class="p">'+(p[9]?'<span class="star">★ LEGEND</span>':'')+'<div class="av">'+p[2]+'</div><h3>'+p[0]+'</h3><div class="t">'+p[1]+'</div><div class="d '+(premium?"":"lk")+'"><div><span>'+p[3]+'</span><b>'+p[4]+'</b></div><div><span>'+p[5]+'</span><b>'+p[6]+'</b></div><div><span>'+p[7]+'</span><b>'+p[8]+'</b></div></div>'+(premium?"":'<div class="t" style="margin-top:8px">🔒 Premium only</div>')+'</div>'}).join("");
+compare()}
+function compare(){var a=P[document.getElementById("c1").value||0],b=P[document.getElementById("c2").value||1];
+function r(n,i){var x=a[i],y=b[i];return '<div class="cr"><b class="'+(x>y?"w1":"")+'">'+x+'</b><span>'+n+'</span><b class="'+(y>x?"w1":"")+'">'+y+'</b></div>'}
+var c=document.getElementById("cm");c.className="cmp"+(premium?"":" lk");
+c.innerHTML='<div class="cr" style="border:0"><b>'+a[0]+'</b><span>VS</span><b>'+b[0]+'</b></div>'+r("Goals",10)+r("Rating",11)+r("Ballon d'Or",12)+(premium?"":'<p style="text-align:center;color:var(--ac2);font-weight:800;margin:10px 0 0">🔒 Premium only</p>')}
+(function(){var o=P.map(function(p,i){return '<option value="'+i+'">'+p[0]+'</option>'}).join("");var a=document.getElementById("c1"),b=document.getElementById("c2");a.innerHTML=o;b.innerHTML=o;b.value=1;a.onchange=b.onchange=compare})();
+document.getElementById("go").onclick=function(){var v=document.getElementById("pw").value.trim(),m=document.getElementById("msg");
+if(v===PASS){premium=true;try{localStorage.setItem("sh_prem","1")}catch(e){}m.style.color="var(--g)";m.textContent="✅ Premium unlocked! Enjoy everything.";render()}
+else{m.style.color="var(--bad)";m.textContent="❌ Wrong password. Pay on WhatsApp to get yours."}};
+if(premium)document.getElementById("msg").textContent="✅ Premium active";
+document.getElementById("th").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark")};
+render();
+</script></body></html>
