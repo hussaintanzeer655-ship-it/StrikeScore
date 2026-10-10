@@ -1,132 +1,213 @@
 <!DOCTYPE html>
-<html lang="en"><head><!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4VF7WNZRR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-H4VF7WNZRR'); </script><meta charset="utf-8"><title>StrikeHub – Football Results, Top Scorers & Player Compare</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>
-:root{--bg:#06141a;--card:#0d252f;--line:#17414f;--tx:#eafcff;--mu:#82b3c0;--ac:#00d4ff;--ac2:#ffcf33;--g:#2dff9a;--bad:#ff5a6e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef9fc;--card:#fff;--line:#c6e3ec;--tx:#082530;--mu:#496d7a;--ac:#0087a8;--ac2:#b88600;--g:#08915a;--bad:#d42a40}}
-:root[data-theme="dark"]{--bg:#06141a;--card:#0d252f;--line:#17414f;--tx:#eafcff;--mu:#82b3c0;--ac:#00d4ff;--ac2:#ffcf33;--g:#2dff9a;--bad:#ff5a6e}
-:root[data-theme="light"]{--bg:#eef9fc;--card:#fff;--line:#c6e3ec;--tx:#082530;--mu:#496d7a;--ac:#0087a8;--ac2:#b88600;--g:#08915a;--bad:#d42a40}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
-.w{max-width:1080px;margin:auto;padding:0 18px}
-header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
-nav{display:flex;justify-content:space-between;align-items:center;height:62px}
-.logo{font-weight:900;font-size:23px}.logo b{color:var(--ac)}
-nav a{color:var(--mu);text-decoration:none;margin-left:14px;font-size:14px}
-#th{background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:99px;padding:6px 12px;cursor:pointer;margin-left:14px}
-.btn{display:inline-block;background:var(--ac);color:#02161c;border:0;padding:12px 22px;border-radius:12px;font-weight:800;cursor:pointer;text-decoration:none;font-size:15px}
-.btn.o{background:none;color:var(--ac);border:1.5px solid var(--ac)}.btn.g{background:var(--ac2);color:#1a1200}
-.hero{padding:56px 0 24px;display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
-.hero h1{font-size:clamp(34px,6vw,58px);margin:0 0 12px;line-height:1.05;letter-spacing:-1.5px}.hero h1 span{color:var(--ac)}
-.hero p{color:var(--mu);font-size:18px;margin:0 0 22px}
-.live{background:linear-gradient(135deg,var(--card),rgba(0,212,255,.12));border:1px solid var(--line);border-radius:20px;padding:22px;text-align:center}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--bad);margin-right:6px;animation:b 1.2s infinite}@keyframes b{50%{opacity:.2}}
-.big{display:flex;justify-content:space-around;align-items:center;margin:14px 0;font-weight:800}.big .sc{font-size:46px;color:var(--ac2)}
-.pbar{height:10px;border-radius:99px;overflow:hidden;display:flex;background:var(--line)}.pbar i{display:block;height:100%}
-h2{font-size:28px;margin:50px 0 6px;letter-spacing:-.5px}.sub{color:var(--mu);margin:0 0 18px}
-.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.bar button,.bar select{background:var(--card);color:var(--mu);border:1px solid var(--line);padding:9px 16px;border-radius:99px;font-weight:600;font-size:14px}
-.bar button{cursor:pointer}.bar button.on{background:var(--ac);color:#02161c;border-color:var(--ac)}.bar select{color:var(--tx);border-radius:12px;flex:1;min-width:150px}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
-.m,.p{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
-.lg{color:var(--mu);font-size:12px;text-transform:uppercase;letter-spacing:1px}
-.row{display:flex;justify-content:space-between;align-items:center;margin:8px 0;font-weight:700}.row .sc{font-size:22px}
-.tag{display:inline-block;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;background:rgba(45,255,154,.14);color:var(--g)}
-.tag.l{background:rgba(255,90,110,.14);color:var(--bad)}.tag.d{background:rgba(255,207,51,.14);color:var(--ac2)}
-.lock{position:relative;margin-top:12px;border-top:1px dashed var(--line);padding-top:12px;font-size:14px}
-.lock .blur{filter:blur(6px);user-select:none;color:var(--mu)}.lock .ov{position:absolute;inset:12px 0 0;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--ac2)}
-.open .blur{filter:none;color:var(--tx)}.open .ov{display:none}
-.sc-list{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 16px}
-.sr{display:grid;grid-template-columns:28px 1fr 2fr 44px;gap:10px;align-items:center;padding:10px 0;font-size:14px}.sr+.sr{border-top:1px solid var(--line)}
-.sr .tr{height:8px;background:var(--line);border-radius:99px;overflow:hidden}.sr .tr i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--ac2));border-radius:99px}
-.sr.lk .tr,.sr.lk b{filter:blur(5px)}
-.pl{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
-.av{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,var(--ac),var(--ac2));display:grid;place-items:center;font-weight:900;color:#02161c;font-size:18px}
-.p h3{margin:10px 0 0;font-size:17px}.p .t{color:var(--mu);font-size:13px}.star{float:right;color:var(--ac2);font-size:12px;font-weight:800}
-.p .d{margin-top:10px;font-size:13px;border-top:1px dashed var(--line);padding-top:10px}.p .d div{display:flex;justify-content:space-between;padding:2px 0}.p .d.lk div{filter:blur(5px);user-select:none}
-.cmp{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-.cmp .cr{display:grid;grid-template-columns:1fr 90px 1fr;text-align:center;padding:8px 0;border-top:1px solid var(--line);font-weight:700}.cmp .cr span{color:var(--mu);font-weight:500;font-size:13px}
-.cmp .cr .w1{color:var(--g)}.cmp.lk .cr{filter:blur(6px)}
-.unl{background:linear-gradient(135deg,var(--card),rgba(255,207,51,.1));border:1px solid var(--ac2);border-radius:20px;padding:26px;text-align:center}
-.unl input{padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font-size:16px;width:min(260px,100%);margin:6px 6px 6px 0}
-#msg{margin-top:8px;font-weight:700;min-height:22px}
-.news{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.news div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}.news b{display:block;margin:6px 0}.news small{color:var(--mu)}
-.plans{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));margin-top:18px}
-.pc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}.pc.pr{border:2px solid var(--ac2);position:relative}
-.pc.pr:before{content:"BEST DEAL";position:absolute;top:-12px;left:22px;background:var(--ac2);color:#1a1200;font-size:11px;font-weight:900;padding:3px 10px;border-radius:99px}
-.pc h3{margin:0}.pri{font-size:44px;font-weight:900;margin:8px 0}.pri small{font-size:14px;color:var(--mu);font-weight:500}
-.pc ul{list-style:none;padding:0;margin:14px 0 20px;color:var(--mu)}.pc li{padding:4px 0}.pc li:before{content:"✓ ";color:var(--g);font-weight:900}.pc .btn{width:100%;text-align:center}
-.steps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
-.steps div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;color:var(--mu);font-size:14px}.steps b{color:var(--ac2);font-size:22px;display:block}
-details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:700}details p{color:var(--mu);margin:8px 0 0}
-footer{margin-top:60px;border-top:1px solid var(--line);padding:26px 0;color:var(--mu);text-align:center;font-size:13px}
-.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:99px;padding:13px 20px;font-weight:800;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:9}
-</style></head><body>
-<header><div class="w"><nav><div class="logo">Strike<b>Hub</b></div><div><a href="#results">Results</a><a href="#scorers">Scorers</a><a href="#compare">Compare</a><a href="#plans">Plans</a><button id="th" aria-label="Theme">🌓</button></div></nav></div></header>
-<main class="w">
-<section class="hero"><div><h1>See who wins. <span>Unlock the rest.</span></h1><p>Free winners and losers every day. Go Premium for $3 to open top scorers, player compare, Ronaldo, Messi, Neymar and full match analysis.</p><a class="btn g" href="#plans">Get Premium – $3</a> <a class="btn o" href="#results">Today's results</a></div>
-<div class="live"><div class="lg"><span class="dot"></span>Featured match · Premier League</div><div class="big"><span>Arsenal</span><span class="sc" id="ls">2 - 1</span><span>Chelsea</span></div><div class="pbar"><i style="width:58%;background:var(--ac)"></i><i style="width:22%;background:var(--ac2)"></i><i style="width:20%;background:var(--bad)"></i></div><small style="color:var(--mu)">Win chance: Arsenal 58% · Draw 22% · Chelsea 20%</small></div></section>
-
-<h2 id="results">Match Results</h2><p class="sub">Winner and loser are free. Win probability and analysis are Premium.</p>
-<div class="bar" id="tabs"></div><div class="grid" id="matches"></div>
-
-<h2 id="scorers">Top Scorers</h2><p class="sub">Names are free. Goals and form are Premium.</p>
-<div class="sc-list" id="sl"></div>
-
-<h2 id="players">Player Spotlight</h2><p class="sub">Full details for every star, including legends.</p>
-<div class="pl" id="pg"></div>
-
-<h2 id="compare">Player Compare</h2><p class="sub">Pick two players and compare them side by side (Premium).</p>
-<div class="bar"><select id="c1"></select><select id="c2"></select></div><div class="cmp" id="cm"></div>
-
-<h2>Football News</h2>
-<div class="news"><div><small>TRANSFERS</small><b>Big clubs chase a new striker for January</b><small>Free story</small></div><div><small>ANALYSIS</small><b>Why high pressing is winning more games this season</b><small>Free story</small></div><div><small>LEGENDS</small><b>Messi and Ronaldo: the numbers that define a era</b><small>Free story</small></div></div>
-
-<h2 id="unlock">Unlock Premium</h2>
-<div class="unl"><h3 style="margin:0 0 6px">Already paid? Enter your password</h3><p style="color:var(--mu);margin:0 0 10px">You get the password on WhatsApp after payment.</p>
-<input id="pw" type="password" placeholder="Enter password" autocomplete="off"><button class="btn g" id="go">Unlock</button><div id="msg"></div></div>
-
-<h2 id="plans">Plans</h2><p class="sub">Pay via WhatsApp, get your password, unlock instantly.</p>
-<div class="plans">
-<div class="pc"><h3>Free</h3><div class="pri">$0</div><ul><li>Match winner & loser</li><li>Player and scorer names</li><li>Football news</li></ul><a class="btn o" href="#results">Current plan</a></div>
-<div class="pc pr"><h3>Premium</h3><div class="pri">$3 <small>access</small></div><ul><li>Full details of every player</li><li>Ronaldo, Messi & Neymar</li><li>Top scorer goals and form</li><li>Player compare tool</li><li>Win chance and match analysis</li></ul><a class="btn g" id="buy" target="_blank" rel="noopener">Pay $3 on WhatsApp</a></div></div>
-<div class="steps"><div><b>1</b>Tap “Pay $3 on WhatsApp”</div><div><b>2</b>Send your payment</div><div><b>3</b>Get your password</div><div><b>4</b>Enter it above and enjoy</div></div>
-
-<h2>FAQ</h2>
-<details><summary>What do I get for free?</summary><p>Every match winner and loser, player names and football news.</p></details>
-<details><summary>How do I get the password?</summary><p>Tap Pay on WhatsApp, send $3, and I'll send you the password.</p></details>
-<details><summary>Does it work on my phone?</summary><p>Yes, StrikeHub works on any phone, tablet or computer.</p></details>
-</main>
-<footer>© 2026 StrikeHub · Support: WhatsApp 175047568</footer>
-<a class="wa" id="wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+<html lang="en">
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4VF7WNZRR"></script>
 <script>
-var PASS="12378909",NUM="60175047568",premium=false,cur="All";
-try{premium=localStorage.getItem("sh_prem")==="1"}catch(e){}
-var link="https://wa.me/"+NUM+"?text="+encodeURIComponent("Hello StrikeHub, I want the $3 Premium subscription. Please send me the password.");
-document.getElementById("buy").href=link;document.getElementById("wa").href=link;
-var M=[["Premier League","Arsenal","Chelsea",2,1,"Win chance 58%. Saka scored twice; Arsenal had 61% possession."],["Premier League","Man City","Liverpool",1,1,"Draw chance 30%. Haaland scored early, Salah levelled late."],["La Liga","Real Madrid","Sevilla",3,0,"Win chance 74%. Vinícius assisted twice."],["La Liga","Barcelona","Valencia",1,2,"Upset: Valencia had only 35% possession but won on the counter."],["Serie A","Inter","Juventus",2,0,"Win chance 55%. Lautaro scored and set up the second."],["Bundesliga","Bayern","Dortmund",4,2,"Win chance 68%. Kane led a high press."]];
-var P=[["Cristiano Ronaldo","Portugal · ST","CR","Goals","900+","Ballon d'Or","5","Skill","Power & heading",1,900,9.3,5],["Lionel Messi","Argentina · RW","LM","Goals","800+","Ballon d'Or","8","Skill","Dribbling & vision",1,800,9.5,8],["Neymar Jr","Brazil · LW","NJ","Goals","430+","Ballon d'Or","0","Skill","Flair & skill moves",1,430,8.8,0],["Erling Haaland","Man City · ST","EH","Goals","28","Rating","9.4","Value","€180M",0,28,9.4,0],["Mohamed Salah","Liverpool · RW","MS","Goals","21","Rating","9.1","Value","€90M",0,21,9.1,0],["Bukayo Saka","Arsenal · RW","BS","Goals","19","Rating","8.9","Value","€130M",0,19,8.9,0],["Harry Kane","Bayern · ST","HK","Goals","26","Rating","9.2","Value","€110M",0,26,9.2,0]];
-var S=[["Erling Haaland","Man City",28],["Harry Kane","Bayern",26],["Kylian Mbappé","Real Madrid",24],["Mohamed Salah","Liverpool",21],["Bukayo Saka","Arsenal",19]];
-function render(){
-var l=["All"].concat(M.map(function(m){return m[0]}).filter(function(v,i,a){return a.indexOf(v)==i}));
-document.getElementById("tabs").innerHTML=l.map(function(x){return '<button class="'+(x==cur?"on":"")+'" data-l="'+x+'">'+x+'</button>'}).join("");
-document.querySelectorAll("#tabs button").forEach(function(b){b.onclick=function(){cur=b.dataset.l;render()}});
-document.getElementById("matches").innerHTML=M.filter(function(m){return cur=="All"||m[0]==cur}).map(function(m){
-var r=m[3]==m[4]?'<span class="tag d">Draw</span>':'<span class="tag">Winner: '+(m[3]>m[4]?m[1]:m[2])+'</span> <span class="tag l">Loser: '+(m[3]>m[4]?m[2]:m[1])+'</span>';
-return '<div class="m"><div class="lg">'+m[0]+'</div><div class="row"><span>'+m[1]+'</span><span class="sc">'+m[3]+' - '+m[4]+'</span><span>'+m[2]+'</span></div><div>'+r+'</div><div class="lock '+(premium?"open":"")+'"><div class="blur">'+m[5]+'</div><div class="ov">🔒 Premium analysis</div></div></div>'}).join("");
-document.getElementById("sl").innerHTML=S.map(function(s,i){return '<div class="sr '+(premium?"":"lk")+'"><span>'+(i+1)+'</span><span><b style="filter:none">'+s[0]+'</b> <small style="color:var(--mu)">'+s[1]+'</small></span><div class="tr"><i style="width:'+(s[2]/28*100)+'%"></i></div><b>'+s[2]+'</b></div>'}).join("");
-document.getElementById("pg").innerHTML=P.map(function(p){
-return '<div class="p">'+(p[9]?'<span class="star">★ LEGEND</span>':'')+'<div class="av">'+p[2]+'</div><h3>'+p[0]+'</h3><div class="t">'+p[1]+'</div><div class="d '+(premium?"":"lk")+'"><div><span>'+p[3]+'</span><b>'+p[4]+'</b></div><div><span>'+p[5]+'</span><b>'+p[6]+'</b></div><div><span>'+p[7]+'</span><b>'+p[8]+'</b></div></div>'+(premium?"":'<div class="t" style="margin-top:8px">🔒 Premium only</div>')+'</div>'}).join("");
-compare()}
-function compare(){var a=P[document.getElementById("c1").value||0],b=P[document.getElementById("c2").value||1];
-function r(n,i){var x=a[i],y=b[i];return '<div class="cr"><b class="'+(x>y?"w1":"")+'">'+x+'</b><span>'+n+'</span><b class="'+(y>x?"w1":"")+'">'+y+'</b></div>'}
-var c=document.getElementById("cm");c.className="cmp"+(premium?"":" lk");
-c.innerHTML='<div class="cr" style="border:0"><b>'+a[0]+'</b><span>VS</span><b>'+b[0]+'</b></div>'+r("Goals",10)+r("Rating",11)+r("Ballon d'Or",12)+(premium?"":'<p style="text-align:center;color:var(--ac2);font-weight:800;margin:10px 0 0">🔒 Premium only</p>')}
-(function(){var o=P.map(function(p,i){return '<option value="'+i+'">'+p[0]+'</option>'}).join("");var a=document.getElementById("c1"),b=document.getElementById("c2");a.innerHTML=o;b.innerHTML=o;b.value=1;a.onchange=b.onchange=compare})();
-document.getElementById("go").onclick=function(){var v=document.getElementById("pw").value.trim(),m=document.getElementById("msg");
-if(v===PASS){premium=true;try{localStorage.setItem("sh_prem","1")}catch(e){}m.style.color="var(--g)";m.textContent="✅ Premium unlocked! Enjoy everything.";render()}
-else{m.style.color="var(--bad)";m.textContent="❌ Wrong password. Pay on WhatsApp to get yours."}};
-if(premium)document.getElementById("msg").textContent="✅ Premium active";
-document.getElementById("th").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark")};
-render();
-</script></body></html>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H4VF7WNZRR');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pitchside – Football Players and Finals</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f5fa;--surf:#fff;--ink:#0d1b3e;--mute:#5a6580;--line:#e1e6f0;--acc:#2f5bff;--acc-ink:#fff;--sh:0 1px 2px rgba(13,27,62,.06),0 8px 24px rgba(13,27,62,.08);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#080e1f;--surf:#101a33;--ink:#eaf0ff;--mute:#9aa8c9;--line:#1d2a4a;--acc:#6d8cff;--acc-ink:#080e1f;--sh:0 8px 24px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#080e1f;--surf:#101a33;--ink:#eaf0ff;--mute:#9aa8c9;--line:#1d2a4a;--acc:#6d8cff;--acc-ink:#080e1f;--sh:0 8px 24px rgba(0,0,0,.4)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 Barlow,system-ui,sans-serif}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{background:var(--surf);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.top .w{display:flex;align-items:center;gap:24px;height:64px}
+.logo{font:700 1.6rem "Barlow Condensed",sans-serif;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;border-radius:50%;background:var(--ink);display:block;position:relative}
+.logo i::after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surf)}
+.tabs{display:flex;gap:4px;margin-left:auto}
+.tab{background:none;border:0;padding:8px 16px;border-radius:8px;font-weight:600;color:var(--mute);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.hero{padding:48px 0 40px}
+.hero .w{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+h1{font:700 clamp(2.4rem,6vw,4.2rem)/1 "Barlow Condensed",sans-serif;margin:0 0 16px;letter-spacing:-.005em}
+.hero p{color:var(--mute);font-size:1.15rem;max-width:44ch;margin:0 0 24px}
+.cta{background:var(--acc);color:var(--acc-ink);border:0;border-radius:10px;padding:12px 22px;font-weight:600;cursor:pointer}
+.hero-stats{display:flex;gap:32px;margin-top:28px}
+.hero-stats b{font:700 2.2rem "Barlow Condensed",sans-serif;display:block;line-height:1}
+.hero-stats span{color:var(--mute);font-size:.9rem}
+.feat{all:unset;display:block;cursor:pointer;background:var(--surf);border-radius:16px;box-shadow:var(--sh);overflow:hidden}
+.feat .hd{padding:14px 20px;color:var(--mute);font-size:.9rem;border-bottom:1px solid var(--line)}
+.sb{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:24px 20px}
+.tm{display:flex;flex-direction:column;align-items:center;gap:8px;font-weight:600;text-align:center}
+.bd{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font:700 1.1rem "Barlow Condensed",sans-serif}
+.sc{font:700 3rem "Barlow Condensed",sans-serif;white-space:nowrap}
+.feat .ft{padding:12px 20px;background:var(--bg);color:var(--mute);font-size:.9rem}
+main{padding-bottom:64px}
+h2.sec{font:700 1.9rem "Barlow Condensed",sans-serif;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 20px}
+.bar{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.bar input,.bar select{font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surf);color:var(--ink)}
+.bar input{flex:1 1 240px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chips button{border:1px solid var(--line);background:var(--surf);border-radius:999px;padding:7px 16px;cursor:pointer;font-weight:500}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+#count{color:var(--mute);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{all:unset;box-sizing:border-box;cursor:pointer;background:var(--surf);border-radius:16px;box-shadow:var(--sh);overflow:hidden;display:block;transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.card:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.kit{height:132px;position:relative;padding:14px 16px;overflow:hidden}
+.kit .no{position:absolute;right:8px;bottom:-22px;font:700 8rem/1 "Barlow Condensed",sans-serif;opacity:.28}
+.kit .po{font-weight:600;font-size:.9rem}
+.body{padding:14px 16px 16px}
+.body h3{font:700 1.45rem/1.1 "Barlow Condensed",sans-serif;margin:0 0 2px}
+.body p{margin:0;color:var(--mute);font-size:.95rem}
+.mlist{display:grid;gap:14px}
+.match{all:unset;box-sizing:border-box;display:grid;grid-template-columns:130px 1fr auto 1fr;gap:16px;align-items:center;background:var(--surf);border-radius:14px;box-shadow:var(--sh);padding:16px 20px;cursor:pointer}
+.match:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.match:hover{box-shadow:0 0 0 2px var(--acc)}
+.match .dt{color:var(--mute);font-size:.88rem;line-height:1.3}
+.match .tm2{display:flex;align-items:center;gap:12px;font-weight:600}
+.match .tm2.r{justify-content:flex-end}
+.match .bd{width:40px;height:40px;font-size:.85rem;flex:none}
+.match .sc{font-size:2rem;background:var(--bg);padding:2px 14px;border-radius:8px}
+.match .nt{grid-column:2/-1;color:var(--mute);font-size:.88rem;margin-top:-8px}
+dialog{margin:0 0 0 auto;height:100%;max-height:none;width:min(480px,100%);border:0;padding:0;background:var(--surf);color:var(--ink);box-shadow:-12px 0 40px rgba(0,0,0,.25);overflow:auto}
+dialog[open]{animation:in .22s ease-out}
+@keyframes in{from{transform:translateX(40px);opacity:0}}
+dialog::backdrop{background:rgba(8,14,31,.55)}
+.dh{padding:24px;position:relative;min-height:170px;overflow:hidden}
+.dh .no{position:absolute;right:12px;bottom:-30px;font:700 10rem/1 "Barlow Condensed",sans-serif;opacity:.25}
+.dh h3{font:700 2.4rem/1 "Barlow Condensed",sans-serif;margin:34px 0 4px;position:relative}
+.dh p{margin:0;position:relative}
+.x{position:absolute;top:14px;right:14px;z-index:2;background:rgba(0,0,0,.35);color:#fff;border:0;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1.2rem}
+.db{padding:24px}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:22px}
+.tiles div{background:var(--bg);border-radius:12px;padding:12px 14px}
+.tiles span{display:block;color:var(--mute);font-size:.85rem}
+.tiles b{font-size:1.1rem}
+.db h4{font:700 1.25rem "Barlow Condensed",sans-serif;margin:20px 0 8px}
+.db ul{margin:0;padding-left:20px}
+.db li{margin-bottom:6px}
+.lk{background:none;border:0;padding:0;color:var(--acc);font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+footer{border-top:1px solid var(--line);padding:24px 20px;text-align:center;color:var(--mute);font-size:.9rem}
+@media (max-width:820px){.hero .w{grid-template-columns:1fr}.match{grid-template-columns:1fr auto 1fr}.match .dt{grid-column:1/-1}.match .nt{grid-column:1/-1;margin-top:0}}
+@media (max-width:480px){.top .w{gap:12px}.tab{padding:8px 10px}.match .tm2 span{font-size:.9rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="w">
+<div class="logo"><i></i>Pitchside</div>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" aria-selected="true" data-v="players">Players</button>
+<button class="tab" role="tab" aria-selected="false" data-v="matches">Matches</button>
+</div></div></header>
+
+<section class="hero"><div class="w">
+<div>
+<h1>Know the players behind football's biggest nights.</h1>
+<p>Profiles of 12 stars and the finals that defined them, with scorers, venues and the story of each match.</p>
+<button class="cta" id="go">Browse players</button>
+<div class="hero-stats"><div><b id="sp">0</b><span>Players</span></div><div><b id="sm">0</b><span>Finals</span></div><div><b id="sc2">0</b><span>Countries</span></div></div>
+</div>
+<button class="feat" id="feat" aria-label="Open the 2022 World Cup final"></button>
+</div></section>
+
+<main class="w">
+<section id="players">
+<h2 class="sec" id="top">Players</h2>
+<p class="sub">Open a profile for bio, career highlights and the finals they played in.</p>
+<div class="bar"><input id="q" type="search" placeholder="Search by name or country" aria-label="Search players">
+<select id="sort" aria-label="Sort players"><option value="n">Name A to Z</option><option value="born">Oldest first</option><option value="no">Shirt number</option></select></div>
+<div class="chips" id="chips"></div>
+<p id="count" aria-live="polite"></p>
+<div class="grid" id="grid"></div>
+</section>
+<section id="matches" hidden>
+<h2 class="sec">Matches</h2>
+<p class="sub">Landmark finals. Open one for scorers and the story.</p>
+<div class="chips" id="mchips"></div>
+<div class="mlist" id="mlist"></div>
+</section>
+</main>
+
+<dialog id="dlg" aria-label="Details"><button class="x" id="dx" aria-label="Close">&times;</button><div id="dbody"></div></dialog>
+<footer>Summaries of past results and honours. Check official sources for current squads and fixtures.</footer>
+
+<script>
+var K={Argentina:["#75aadb","#e9f3fb","#0d1b3e"],Portugal:["#b3122b","#0b6b3a","#fff"],Norway:["#ba0c2f","#00205b","#fff"],France:["#0b2a6f","#2b52c4","#fff"],Spain:["#c60b1e","#e8a900","#fff"],Egypt:["#ce1126","#1a1a1a","#fff"],England:["#14213d","#c8102e","#fff"],Belgium:["#c8102e","#1a1a1a","#fff"],Croatia:["#c8102e","#1d3c8f","#fff"],Netherlands:["#f36c21","#c24a0c","#fff"],Brazil:["#f5c400","#009c3b","#0d1b3e"]};
+var T={ARG:["Argentina","#75aadb","#0d1b3e"],FRA:["France","#0b2a6f","#fff"],ESP:["Spain","#c60b1e","#fff"],ENG:["England","#14213d","#fff"],CRO:["Croatia","#c8102e","#fff"],LIV:["Liverpool","#c8102e","#fff"],RMA:["Real Madrid","#e8e8f0","#14213d"],BVB:["Borussia Dortmund","#fde100","#111"],COL:["Colombia","#fcd116","#0b2a6f"]};
+var P=[
+{n:"Lionel Messi",c:"Argentina",pos:"Forward",no:10,born:1987,city:"Rosario",h:"170 cm",foot:"Left",hl:["Won the 2022 World Cup and was named player of the tournament","Eight-time Ballon d'Or winner, the most by any player","Won the Copa América in 2021 and 2024","Four Champions League titles with Barcelona"],m:[1,7]},
+{n:"Cristiano Ronaldo",c:"Portugal",pos:"Forward",no:7,born:1985,city:"Funchal",h:"187 cm",foot:"Right",hl:["Men's record scorer for national teams","Five Champions League titles and five Ballon d'Or awards","Captained Portugal to Euro 2016"],m:[]},
+{n:"Erling Haaland",c:"Norway",pos:"Forward",no:9,born:2000,city:"Leeds",h:"194 cm",foot:"Left",hl:["Scored a record 36 Premier League goals in 2022-23","Part of Manchester City's 2023 treble-winning side","Fast, powerful and clinical inside the box"],m:[]},
+{n:"Kylian Mbappé",c:"France",pos:"Forward",no:10,born:1998,city:"Paris",h:"178 cm",foot:"Right",hl:["Won the 2018 World Cup as a teenager","Scored a hat-trick in the 2022 final and won the Golden Boot","Among the fastest players in world football"],m:[1,3]},
+{n:"Lamine Yamal",c:"Spain",pos:"Forward",no:19,born:2007,city:"Esplugues de Llobregat",h:"180 cm",foot:"Left",hl:["Won Euro 2024 with Spain aged 17","Named young player of Euro 2024","Dribbler who cuts in from the right wing"],m:[2]},
+{n:"Mohamed Salah",c:"Egypt",pos:"Forward",no:11,born:1992,city:"Nagrig",h:"175 cm",foot:"Left",hl:["Multiple Premier League Golden Boot winner","Champions League winner with Liverpool in 2019","Egypt's most famous modern player"],m:[5]},
+{n:"Jude Bellingham",c:"England",pos:"Midfielder",no:10,born:2003,city:"Stourbridge",h:"186 cm",foot:"Right",hl:["Joined Real Madrid in 2023 and won the Champions League in 2024","Played in the Euro 2024 final","Box-to-box midfielder who scores and creates"],m:[2,6]},
+{n:"Kevin De Bruyne",c:"Belgium",pos:"Midfielder",no:7,born:1991,city:"Drongen",h:"181 cm",foot:"Right",hl:["Key playmaker in Manchester City's 2023 treble","Known for precise through-passes and crosses","Belgium's creative leader through a golden generation"],m:[]},
+{n:"Luka Modrić",c:"Croatia",pos:"Midfielder",no:10,born:1985,city:"Zadar",h:"172 cm",foot:"Right",hl:["Won the 2018 Ballon d'Or after Croatia's World Cup run","Six Champions League titles with Real Madrid","Controls tempo with passing and vision"],m:[3,5,6]},
+{n:"Aitana Bonmatí",c:"Spain",pos:"Midfielder",no:6,born:1998,city:"Sant Pere de Ribes",h:"170 cm",foot:"Right",hl:["Won the 2023 Women's World Cup","Won the Ballon d'Or Féminin in 2023 and 2024","Technical midfielder who links defence and attack"],m:[4]},
+{n:"Virgil van Dijk",c:"Netherlands",pos:"Defender",no:4,born:1991,city:"Breda",h:"195 cm",foot:"Right",hl:["Won the Champions League in 2019 and the Premier League in 2020 with Liverpool","Dominant in the air and calm on the ball","Captains the Netherlands"],m:[5]},
+{n:"Alisson Becker",c:"Brazil",pos:"Goalkeeper",no:1,born:1992,city:"Novo Hamburgo",h:"191 cm",foot:"Right",hl:["Won the Champions League in 2019 and the Premier League in 2020","Sweeper-keeper with accurate long distribution","Brazil's first-choice goalkeeper"],m:[5]}
+];
+var M=[
+{n:"World Cup Final 2022",a:"ARG",b:"FRA",sa:3,sb:3,note:"Argentina won 4-2 on penalties",d:"18 Dec 2022",v:"Lusail Stadium, Qatar",g:["Messi 23' (pen)","Di María 36'","Mbappé 80' (pen)","Mbappé 81'","Messi 108'","Mbappé 118' (pen)"],s:"One of the most dramatic finals ever. Argentina led 2-0, France levelled with two goals in 97 seconds, and Mbappé's hat-trick forced a shootout that Argentina won.",p:[0,3]},
+{n:"Euro 2024 Final",a:"ESP",b:"ENG",sa:2,sb:1,note:"",d:"14 Jul 2024",v:"Olympiastadion, Berlin",g:["Williams 47'","Palmer 73'","Oyarzabal 86'"],s:"Spain won a record fourth European title, with a late Oyarzabal goal settling it after Palmer equalised for England.",p:[4,6]},
+{n:"World Cup Final 2018",a:"FRA",b:"CRO",sa:4,sb:2,note:"",d:"15 Jul 2018",v:"Luzhniki Stadium, Moscow",g:["Mandžukić 18' (og)","Perišić 28'","Griezmann 38' (pen)","Pogba 59'","Mbappé 65'","Mandžukić 69'"],s:"France won their second World Cup. Croatia, led by Modrić, reached their first final.",p:[3,8]},
+{n:"Women's World Cup Final 2023",a:"ESP",b:"ENG",sa:1,sb:0,note:"",d:"20 Aug 2023",v:"Stadium Australia, Sydney",g:["Carmona 29'"],s:"Olga Carmona's strike gave Spain their first Women's World Cup.",p:[9]},
+{n:"Champions League Final 2022",a:"LIV",b:"RMA",sa:0,sb:1,note:"",d:"28 May 2022",v:"Stade de France, Paris",g:["Vinícius Júnior 59'"],s:"Real Madrid won their 14th European Cup despite a busy night for Liverpool's attack.",p:[5,8,10,11]},
+{n:"Champions League Final 2024",a:"BVB",b:"RMA",sa:0,sb:2,note:"",d:"1 Jun 2024",v:"Wembley Stadium, London",g:["Carvajal 74'","Vinícius Júnior 83'"],s:"Real Madrid claimed a 15th European title.",p:[6,8]},
+{n:"Copa América Final 2024",a:"ARG",b:"COL",sa:1,sb:0,note:"After extra time",d:"14 Jul 2024",v:"Hard Rock Stadium, Miami",g:["Lautaro Martínez 112'"],s:"Argentina defended their title with an extra-time winner.",p:[0]}
+];
+var pos="All",mf="All",$=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function kit(p){var k=K[p.c];return 'background:linear-gradient(135deg,'+k[0]+','+k[1]+');color:'+k[2]}
+function bd(c){var t=T[c];return '<span class="bd" style="background:'+t[1]+';color:'+t[2]+'">'+c+'</span>'}
+$("sp").textContent=P.length;$("sm").textContent=M.length;
+$("sc2").textContent=Object.keys(P.reduce(function(o,p){o[p.c]=1;return o},{})).length;
+function chips(el,arr){el.innerHTML=arr.map(function(x){return '<button aria-pressed="'+(x==="All")+'" data-p="'+x+'">'+x+'</button>'}).join("")}
+chips($("chips"),["All","Forward","Midfielder","Defender","Goalkeeper"]);
+chips($("mchips"),["All","World Cup","Euro","Champions League","Copa América"]);
+function feat(){var m=M[0];$("feat").innerHTML='<div class="hd">Featured final: '+esc(m.n)+'</div><div class="sb"><div class="tm">'+bd(m.a)+T[m.a][0]+'</div><div class="sc">'+m.sa+' - '+m.sb+'</div><div class="tm">'+bd(m.b)+T[m.b][0]+'</div></div><div class="ft">'+esc(m.note)+' | '+esc(m.v)+'</div>'}
+function renderP(){
+  var t=$("q").value.trim().toLowerCase(),s=$("sort").value;
+  var l=P.map(function(p,i){p.i=i;return p}).filter(function(p){return(pos==="All"||p.pos===pos)&&(!t||(p.n+" "+p.c).toLowerCase().indexOf(t)>-1)});
+  l.sort(function(a,b){return s==="n"?a.n.localeCompare(b.n):a[s]-b[s]});
+  $("count").textContent=l.length+(l.length===1?" player":" players");
+  $("grid").innerHTML=l.length?l.map(function(p){return '<button class="card" data-i="'+p.i+'"><div class="kit" style="'+kit(p)+'"><span class="po">'+esc(p.pos)+'</span><span class="no">'+p.no+'</span></div><div class="body"><h3>'+esc(p.n)+'</h3><p>'+esc(p.c)+', born '+p.born+'</p></div></button>'}).join(""):'<p class="sub">No players match. Clear the search or choose another position.</p>';
+}
+function renderM(){
+  var l=M.filter(function(m){return mf==="All"||m.n.indexOf(mf)>-1});
+  $("mlist").innerHTML=l.length?l.map(function(m){return '<button class="match" data-i="'+M.indexOf(m)+'"><span class="dt"><b>'+esc(m.n)+'</b><br>'+esc(m.d)+'</span><span class="tm2">'+bd(m.a)+'<span>'+T[m.a][0]+'</span></span><span class="sc">'+m.sa+' - '+m.sb+'</span><span class="tm2 r"><span>'+T[m.b][0]+'</span>'+bd(m.b)+'</span>'+(m.note?'<span class="nt">'+esc(m.note)+'</span>':'')+'</button>'}).join(""):'<p class="sub">No matches for this filter.</p>';
+}
+function show(h){$("dbody").innerHTML=h;if(!$("dlg").open)$("dlg").showModal();$("dlg").scrollTop=0}
+function showP(i){var p=P[i];
+  var ms=p.m.map(function(k){var m=M[k-1];return '<li><button class="lk" data-m="'+(k-1)+'">'+esc(m.n)+'</button>, '+T[m.a][0]+' '+m.sa+'-'+m.sb+' '+T[m.b][0]+'</li>'}).join("");
+  show('<div class="dh" style="'+kit(p)+'"><span class="no">'+p.no+'</span><h3>'+esc(p.n)+'</h3><p>'+esc(p.pos)+' for '+esc(p.c)+'</p></div><div class="db"><div class="tiles"><div><span>Shirt number</span><b>'+p.no+'</b></div><div><span>Born</span><b>'+p.born+'</b></div><div><span>Birthplace</span><b>'+esc(p.city)+'</b></div><div><span>Height and foot</span><b>'+p.h+', '+p.foot+'</b></div></div><h4>Career highlights</h4><ul>'+p.hl.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul>'+(ms?'<h4>Featured finals</h4><ul>'+ms+'</ul>':'')+'</div>');}
+function showM(i){var m=M[i];
+  var ps=m.p.map(function(k){return '<li><button class="lk" data-p="'+k+'">'+esc(P[k].n)+'</button>, '+esc(P[k].pos)+'</li>'}).join("");
+  show('<div class="dh" style="background:linear-gradient(135deg,'+T[m.a][1]+','+T[m.b][1]+');color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5)"><h3>'+esc(m.n)+'</h3><p>'+esc(m.d)+', '+esc(m.v)+'</p></div><div class="db"><div class="sb" style="padding:0 0 18px"><div class="tm">'+bd(m.a)+T[m.a][0]+'</div><div class="sc">'+m.sa+' - '+m.sb+'</div><div class="tm">'+bd(m.b)+T[m.b][0]+'</div></div>'+(m.note?'<p style="text-align:center;margin:0 0 12px"><b>'+esc(m.note)+'</b></p>':'')+'<p>'+esc(m.s)+'</p><h4>Goals</h4><ul>'+m.g.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul><h4>Players featured</h4><ul>'+ps+'</ul></div>');}
+function chipClick(el,fn){el.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;fn(b.dataset.p);this.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)})})}
+chipClick($("chips"),function(v){pos=v;renderP()});
+chipClick($("mchips"),function(v){mf=v;renderM()});
+$("q").addEventListener("input",renderP);$("sort").addEventListener("change",renderP);
+$("grid").addEventListener("click",function(e){var b=e.target.closest(".card");if(b)showP(b.dataset.i)});
+$("mlist").addEventListener("click",function(e){var b=e.target.closest(".match");if(b)showM(b.dataset.i)});
+$("feat").addEventListener("click",function(){showM(0)});
+$("dbody").addEventListener("click",function(e){var b=e.target.closest(".lk");if(!b)return;if(b.dataset.m)showM(b.dataset.m);else showP(b.dataset.p)});
+$("dx").addEventListener("click",function(){$("dlg").close()});
+$("dlg").addEventListener("click",function(e){if(e.target===$("dlg"))$("dlg").close()});
+function tab(v){document.querySelectorAll(".tab").forEach(function(x){x.setAttribute("aria-selected",x.dataset.v===v)});$("players").hidden=v!=="players";$("matches").hidden=v!=="matches"}
+document.querySelectorAll(".tab").forEach(function(t){t.addEventListener("click",function(){tab(t.dataset.v)})});
+$("go").addEventListener("click",function(){tab("players");$("top").scrollIntoView({behavior:"smooth"})});
+feat();renderP();renderM();
+</script>
+</body>
+</html>
